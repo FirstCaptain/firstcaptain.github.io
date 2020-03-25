@@ -2,16 +2,16 @@
 layout: post
 title: "Show images from inside docker container"
 ---
-Docker and OpenCV are both great tools. Docker can be especially useful for development. [OpenCV](https://opencv.org) is the defacto gold standard in developing computer vision applications. However, it can be a little challanging at first to set up these tools to work together. More specifically to display images from inside the container on the host when calling opencv functions such as imshow. This post will demonstrate by example one way to get imshow working with a simple c++ application, while installing and running  OpenCV inside a docker container.
+
+Docker and OpenCV are both great tools. Docker can be especially useful for development. [OpenCV](https://opencv.org) is arguably the defacto gold standard in developing computer vision applications. However, it can be a little challanging at first to set up these tools to work together. More specifically to display images from inside the container on the host when calling OpenCV functions such as imshow. This post will demonstrate by example one way to get imshow working with a simple c++ application, while installing and running  OpenCV inside a docker container.
 
 So.. lets get into it.
 
-Create a new project folder named whatever you like, inside of it create a file named Dockerfile.
+Create a new project folder named whatever you like and inside of it create a file named Dockerfile.
 
 Copy one of the two options below into your Dockerfile you just created.
 
-**The first example builds OpenCV from source in docker container for your reference, it will take a while to complete should you build yourself.**
-**The second pulls down my already built version of the first one from Dockerhub.**
+**The first example builds OpenCV from source in docker container for your reference, it will take a while to complete should you decide to build it yourself.**
 
 {% highlight docker %}
 FROM debian:buster
@@ -46,6 +46,7 @@ RUN git clone https://github.com/opencv/opencv.git && \
 
 {% endhighlight %}
 
+**This second example pulls down my already built version of the first one from Dockerhub, I recommend this one**
 {% highlight docker %}
 From firstcaptain/opencv:4.2.0
 

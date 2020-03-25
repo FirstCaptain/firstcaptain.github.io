@@ -1,15 +1,27 @@
 ---
 layout: page
-title: About
+title: About the author
 permalink: /about/
 ---
 
-Some information about you!
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
-### More Information
+My name is Chris.
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a family man and I write software.
 
-### Contact me
+Technical Interests and experience include:
 
-[email@domain.com](mailto:email@domain.com)
+* Computer Vision
+* Machine Learning
+* Robotics
+* Cloud Tech
+
+## Education:
+
+* BS in Bioinformatics from Brigham Young University
+* MS in Computer Science from Georgia Institute of Technology
+
+## Certifications:
+
+[AWS Certified Developer](https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2020-01-31&ci=AWS01245855 "AWS Developer Cert"){:target="_blank"}
